@@ -1,3 +1,56 @@
 body{
-    background-color: bisque;
+    background-color: rgb(255, 247, 248);
+    font-family: 'Comfortaa', cursive;
+    font-weight:bolder
+}
+.show{
+}
+.contract,.freelance,.permanent{
+    padding: 50px;
+    padding-left: 200px;
+    margin: 30px;
+    margin-bottom: 50px;
+    border-radius: 200px;
+    color: rgb(117, 94, 87);
+    font-size: 20px;
+    height: 300px;
+    transition: 0.6s ease all;
+    line-height: 1.8;
+}
+.contract{
+    background-color:#D9E3DA;    
+    box-shadow: 0px 10px 0px #aac5ae, 0px 3px 15px rgba(0,0,0,.4), inset 0px 1px 0px rgba(255,255,255,.3), inset 0px 0px 3px rgba(255,255,255,.5);
+}
+.freelance{
+    background-color:#ECC9C7;
+    box-shadow: 0px 10px 0px #cca3a1, 0px 3px 15px rgba(0,0,0,.4), inset 0px 1px 0px rgba(255,255,255,.3), inset 0px 0px 3px rgba(255,255,255,.5);
+}
+.permanent{
+    background-color:#D5D6EA;
+    box-shadow: 0px 10px 0px #a2a4c2, 0px 3px 15px rgba(0,0,0,.4), inset 0px 1px 0px rgba(255,255,255,.3), inset 0px 0px 3px rgba(255,255,255,.5);
+}
+
+.contract:hover{
+    background-color:#e7ece7; 
+    box-shadow: 0px 10px 0px #c5d1c6, 0px 3px 15px rgba(0,0,0,.4), inset 0px 1px 0px rgba(255,255,255,.3), inset 0px 0px 3px rgba(255,255,255,.5);
+    cursor: pointer;
+    transition: 0.6s ease all;
+}
+.freelance:hover{
+    background-color:#ecd7d6;
+    box-shadow: 0px 10px 0px #dfc0be, 0px 3px 15px rgba(0,0,0,.4), inset 0px 1px 0px rgba(255,255,255,.3), inset 0px 0px 3px rgba(255,255,255,.5);
+    cursor: pointer;
+    transition: 0.6s ease all;
+}
+.permanent:hover{
+    background-color:#e4e4f0;
+    box-shadow: 0px 10px 0px #c2c3d8, 0px 3px 15px rgba(0,0,0,.4), inset 0px 1px 0px rgba(255,255,255,.3), inset 0px 0px 3px rgba(255,255,255,.5);
+    cursor: pointer;
+    transition: 0.6s ease all;
+}
+.contract:focus,.freelance:focus,.permanent:focus{
+    border-radius: 200px;
+    height: 900px;
+    pointer-events: none;
+    transition: 0.6s ease all;
 }
