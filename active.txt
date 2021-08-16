@@ -1,0 +1,87 @@
+    // dataused = data.filter(function(obj) {return obj.P_AGENT_LEVEL=="Contract"}); 
+    // for (i = 0;i<dataused.length;i++){
+    //     if(dataused[i].P_AGENT_LEVEL=='Contract'){
+    //         if (dataused[i].Status=="active"){
+    //             show.innerHTML += '<div class="contract" tabindex="0">'+"<span style='font-size: 30px;background-color: #eaf1eb;border-radius:50px;padding:15px;margin-bottom:0px;box-shadow: -5px -5px 0 #aac5ae;line-height: 2.5;'>"+dataused[i].SALE_FULLNAME_ENG+"</span>"+'<div class = status>&nbsp</div>'+"<br />"+"<b>Agent ID : </b>"+dataused[i].Agent_ID+"<br />"+"<b>Partner Type : </b>"+dataused[i].PARTNER_TYPE+"<br />"+"<b>Agent Level : </b>"+
+    //             dataused[i].P_AGENT_LEVEL+"<br />"+"<b>SUP. Fullname : </b>"+dataused[i].SUP_FULLNAME+"<br />"+"<b>Manager Fullname : </b>"+dataused[i].MANAGER_FULLNAME+"<br />"+"<b>Team : </b>"+dataused[i].TEAM+"<br />"+"<b>Status : </b>"+dataused[i].Status+"<br />"+'</div>'; 
+    //             show.innerHTML+='<p class="seemore">▼</p>';
+    //             }
+    //             else{
+    //                 show.innerHTML += '<div class="contract" tabindex="0">'+"<span style='font-size: 30px;background-color: #eaf1eb;border-radius:50px;padding:15px;margin-bottom:0px;box-shadow: -5px -5px 0 #aac5ae;line-height: 2.5;'>"+dataused[i].SALE_FULLNAME_ENG+"</span>"+'<div style="background: rgb(182, 0, 0);" class = status >&nbsp</div>'+"<br />"+"<b>Agent ID : </b>"+dataused[i].Agent_ID+"<br />"+"<b>Partner Type : </b>"+dataused[i].PARTNER_TYPE+"<br />"+"<b>Agent Level : </b>"+
+    //                 dataused[i].P_AGENT_LEVEL+"<br />"+"<b>SUP. Fullname : </b>"+dataused[i].SUP_FULLNAME+"<br />"+"<b>Manager Fullname : </b>"+dataused[i].MANAGER_FULLNAME+"<br />"+"<b>Team : </b>"+dataused[i].TEAM+"<br />"+"<b>Status : </b>"+dataused[i].Status+"<br />"+'</div>';     
+    //                 show.innerHTML+='<p class="seemore">▼</p>';
+    //             }
+    //     }
+    //     else if(dataused[i].P_AGENT_LEVEL=='Freelance'){
+    //         if (dataused[i].Status=="active"){
+    //             show.innerHTML += '<div class="contract" tabindex="0">'+"<span style='font-size: 30px;background-color: #eaf1eb;border-radius:50px;padding:15px;margin-bottom:0px;box-shadow: -5px -5px 0 #aac5ae;line-height: 2.5;'>"+dataused[i].SALE_FULLNAME_ENG+"</span>"+'<div class = status>&nbsp</div>'+"<br />"+"<b>Agent ID : </b>"+dataused[i].Agent_ID+"<br />"+"<b>Partner Type : </b>"+dataused[i].PARTNER_TYPE+"<br />"+"<b>Agent Level : </b>"+
+    //             dataused[i].P_AGENT_LEVEL+"<br />"+"<b>SUP. Fullname : </b>"+dataused[i].SUP_FULLNAME+"<br />"+"<b>Manager Fullname : </b>"+dataused[i].MANAGER_FULLNAME+"<br />"+"<b>Team : </b>"+dataused[i].TEAM+"<br />"+"<b>Status : </b>"+dataused[i].Status+"<br />"+'</div>'; 
+    //             show.innerHTML+='<p class="seemore">▼</p>';
+    //             }
+    //             else{
+    //                 show.innerHTML += '<div class="contract" tabindex="0">'+"<span style='font-size: 30px;background-color: #eaf1eb;border-radius:50px;padding:15px;margin-bottom:0px;box-shadow: -5px -5px 0 #aac5ae;line-height: 2.5;'>"+dataused[i].SALE_FULLNAME_ENG+"</span>"+'<div style="background: rgb(182, 0, 0);" class = status >&nbsp</div>'+"<br />"+"<b>Agent ID : </b>"+dataused[i].Agent_ID+"<br />"+"<b>Partner Type : </b>"+dataused[i].PARTNER_TYPE+"<br />"+"<b>Agent Level : </b>"+
+    //                 dataused[i].P_AGENT_LEVEL+"<br />"+"<b>SUP. Fullname : </b>"+dataused[i].SUP_FULLNAME+"<br />"+"<b>Manager Fullname : </b>"+dataused[i].MANAGER_FULLNAME+"<br />"+"<b>Team : </b>"+dataused[i].TEAM+"<br />"+"<b>Status : </b>"+dataused[i].Status+"<br />"+'</div>';     
+    //                 show.innerHTML+='<p class="seemore">▼</p>';
+    //             }
+    //         }
+    //     else if(dataused[i].P_AGENT_LEVEL=='Permanent'){
+    //         if (dataused[i].Status=="active"){
+    //             show.innerHTML += '<div class="permanent" tabindex="0">'+"<span style='font-size: 30px;background-color: #efeffa;border-radius:50px;padding:15px;margin-bottom:10px;box-shadow: -5px -5px 0  #a2a4c2;line-height: 2.5;'>"+dataused[i].SALE_FULLNAME_ENG+"</span>"+'<div class = status>&nbsp</div>'+"<br />"+"<b>Agent ID : </b>"+dataused[i].Agent_ID+"<br />"+"<b>Partner Type : </b>"+dataused[i].PARTNER_TYPE+"<br />"+"<b>Agent Level : </b>"+
+    //             dataused[i].P_AGENT_LEVEL+"<br />"+"<b>SUP. Fullname : </b>"+dataused[i].SUP_FULLNAME+"<br />"+"<b>Manager Fullname : </b>"+dataused[i].MANAGER_FULLNAME+"<br />"+"<b>Team : </b>"+dataused[i].TEAM+"<br />"+"<b>Status : </b>"+dataused[i].Status+"<br />"+'</div>'; 
+    //             show.innerHTML+='<p class="seemore">▼</p>';
+    //             }
+    //             else{
+    //                 show.innerHTML += '<div class="permanent" tabindex="0">'+"<span style='font-size: 30px;background-color: #efeffa;border-radius:50px;padding:15px;margin-bottom:10px;box-shadow: -5px -5px 0  #a2a4c2;line-height: 2.5;'>"+dataused[i].SALE_FULLNAME_ENG+"</span>"+'<div style="background: rgb(182, 0, 0);" class = status >&nbsp</div>'+"<br />"+"<b>Agent ID : </b>"+dataused[i].Agent_ID+"<br />"+"<b>Partner Type : </b>"+dataused[i].PARTNER_TYPE+"<br />"+"<b>Agent Level : </b>"+
+    //                 dataused[i].P_AGENT_LEVEL+"<br />"+"<b>SUP. Fullname : </b>"+dataused[i].SUP_FULLNAME+"<br />"+"<b>Manager Fullname : </b>"+dataused[i].MANAGER_FULLNAME+"<br />"+"<b>Team : </b>"+dataused[i].TEAM+"<br />"+"<b>Status : </b>"+dataused[i].Status+"<br />"+'</div>';     
+    //                 show.innerHTML+='<p class="seemore">▼</p>';
+    //             }
+    //         } 
+    //     } 
+        // function filterContract (){
+        //     show.innerHTML = " ";
+        //     dataused = data.filter(function(obj) {return obj.P_AGENT_LEVEL=="Contract"}); 
+        //     for (i = 0;i<dataused.length;i++){
+        //         if (dataused[i].Status=="active"){
+        //         show.innerHTML += '<div class="contract" tabindex="0">'+"<span style='font-size: 30px;background-color: #eaf1eb;border-radius:50px;padding:15px;margin-bottom:0px;box-shadow: -5px -5px 0 #aac5ae;line-height: 2.5;'>"+dataused[i].SALE_FULLNAME_ENG+"</span>"+'<div class = status>&nbsp</div>'+"<br />"+"<b>Agent ID : </b>"+dataused[i].Agent_ID+"<br />"+"<b>Partner Type : </b>"+dataused[i].PARTNER_TYPE+"<br />"+"<b>Agent Level : </b>"+
+        //         dataused[i].P_AGENT_LEVEL+"<br />"+"<b>SUP. Fullname : </b>"+dataused[i].SUP_FULLNAME+"<br />"+"<b>Manager Fullname : </b>"+dataused[i].MANAGER_FULLNAME+"<br />"+"<b>Team : </b>"+dataused[i].TEAM+"<br />"+"<b>Status : </b>"+dataused[i].Status+"<br />"+'</div>'; 
+        //         show.innerHTML+='<p class="seemore">▼</p>';
+        //         }
+        //         else{
+        //             show.innerHTML += '<div class="contract" tabindex="0">'+"<span style='font-size: 30px;background-color: #eaf1eb;border-radius:50px;padding:15px;margin-bottom:0px;box-shadow: -5px -5px 0 #aac5ae;line-height: 2.5;'>"+dataused[i].SALE_FULLNAME_ENG+"</span>"+'<div style="background: rgb(182, 0, 0);" class = status >&nbsp</div>'+"<br />"+"<b>Agent ID : </b>"+dataused[i].Agent_ID+"<br />"+"<b>Partner Type : </b>"+dataused[i].PARTNER_TYPE+"<br />"+"<b>Agent Level : </b>"+
+        //             dataused[i].P_AGENT_LEVEL+"<br />"+"<b>SUP. Fullname : </b>"+dataused[i].SUP_FULLNAME+"<br />"+"<b>Manager Fullname : </b>"+dataused[i].MANAGER_FULLNAME+"<br />"+"<b>Team : </b>"+dataused[i].TEAM+"<br />"+"<b>Status : </b>"+dataused[i].Status+"<br />"+'</div>';     
+        //             show.innerHTML+='<p class="seemore">▼</p>';
+        //         }
+        //     }
+        // } 
+        // function filterFreelance (){
+        //     show.innerHTML = " ";
+        //     dataused = data.filter(function(obj) {return obj.P_AGENT_LEVEL=="Freelance"}); 
+        //     for (i = 0;i<dataused.length;i++){
+        //         if (dataused[i].Status=="active"){
+        //         show.innerHTML += '<div class="freelance" tabindex="0">'+"<span style='font-size: 30px;background-color: #ecdfde;border-radius:50px;padding:15px;margin-bottom:0px;box-shadow: -5px -5px 0 #cca3a1;line-height: 2.5;'>"+dataused[i].SALE_FULLNAME_ENG+"</span>"+'<div class = status>&nbsp</div>'+"<br />"+"<b>Agent ID : </b>"+dataused[i].Agent_ID+"<br />"+"<b>Partner Type : </b>"+dataused[i].PARTNER_TYPE+"<br />"+"<b>Agent Level : </b>"+
+        //         dataused[i].P_AGENT_LEVEL+"<br />"+"<b>SUP. Fullname : </b>"+dataused[i].SUP_FULLNAME+"<br />"+"<b>Manager Fullname : </b>"+dataused[i].MANAGER_FULLNAME+"<br />"+"<b>Team : </b>"+dataused[i].TEAM+"<br />"+"<b>Status : </b>"+dataused[i].Status+"<br />"+'</div>'; 
+        //         show.innerHTML+='<p class="seemore">▼</p>';
+        //         }
+        //         else{
+        //             show.innerHTML += '<div class="freelance" tabindex="0">'+"<span style='font-size: 30px;background-color: #ecdfde;border-radius:50px;padding:15px;margin-bottom:0px;box-shadow: -5px -5px 0 #cca3a1;line-height: 2.5;'>"+dataused[i].SALE_FULLNAME_ENG+"</span>"+'<div style="background: rgb(182, 0, 0);" class = status >&nbsp</div>'+"<br />"+"<b>Agent ID : </b>"+dataused[i].Agent_ID+"<br />"+"<b>Partner Type : </b>"+dataused[i].PARTNER_TYPE+"<br />"+"<b>Agent Level : </b>"+
+        //             dataused[i].P_AGENT_LEVEL+"<br />"+"<b>SUP. Fullname : </b>"+dataused[i].SUP_FULLNAME+"<br />"+"<b>Manager Fullname : </b>"+dataused[i].MANAGER_FULLNAME+"<br />"+"<b>Team : </b>"+dataused[i].TEAM+"<br />"+"<b>Status : </b>"+dataused[i].Status+"<br />"+'</div>';     
+        //             show.innerHTML+='<p class="seemore">▼</p>';
+        //         }
+        //     }
+        // } 
+        // function filterPermanent (){
+        //     show.innerHTML = " ";
+        //     dataused = data.filter(function(obj) {return obj.P_AGENT_LEVEL=="Permanent"}); 
+        //     for (i = 0;i<dataused.length;i++){
+        //         if (dataused[i].Status=="active"){
+        //         show.innerHTML += '<div class="permanent" tabindex="0">'+"<span style='font-size: 30px;background-color: #efeffa;border-radius:50px;padding:15px;margin-bottom:10px;box-shadow: -5px -5px 0  #a2a4c2;line-height: 2.5;'>"+dataused[i].SALE_FULLNAME_ENG+"</span>"+'<div class = status>&nbsp</div>'+"<br />"+"<b>Agent ID : </b>"+dataused[i].Agent_ID+"<br />"+"<b>Partner Type : </b>"+dataused[i].PARTNER_TYPE+"<br />"+"<b>Agent Level : </b>"+
+        //         dataused[i].P_AGENT_LEVEL+"<br />"+"<b>SUP. Fullname : </b>"+dataused[i].SUP_FULLNAME+"<br />"+"<b>Manager Fullname : </b>"+dataused[i].MANAGER_FULLNAME+"<br />"+"<b>Team : </b>"+dataused[i].TEAM+"<br />"+"<b>Status : </b>"+dataused[i].Status+"<br />"+'</div>'; 
+        //         show.innerHTML+='<p class="seemore">▼</p>';
+        //         }
+        //         else{
+        //             show.innerHTML += '<div class="permanent" tabindex="0">'+"<span style='font-size: 30px;background-color: #efeffa;border-radius:50px;padding:15px;margin-bottom:10px;box-shadow: -5px -5px 0  #a2a4c2;line-height: 2.5;'>"+dataused[i].SALE_FULLNAME_ENG+"</span>"+'<div style="background: rgb(182, 0, 0);" class = status >&nbsp</div>'+"<br />"+"<b>Agent ID : </b>"+dataused[i].Agent_ID+"<br />"+"<b>Partner Type : </b>"+dataused[i].PARTNER_TYPE+"<br />"+"<b>Agent Level : </b>"+
+        //             dataused[i].P_AGENT_LEVEL+"<br />"+"<b>SUP. Fullname : </b>"+dataused[i].SUP_FULLNAME+"<br />"+"<b>Manager Fullname : </b>"+dataused[i].MANAGER_FULLNAME+"<br />"+"<b>Team : </b>"+dataused[i].TEAM+"<br />"+"<b>Status : </b>"+dataused[i].Status+"<br />"+'</div>';     
+        //             show.innerHTML+='<p class="seemore">▼</p>';
+        //         }
+        //     }
+        // }
