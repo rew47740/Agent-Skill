@@ -7,25 +7,129 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@600&display=swap" rel="stylesheet">
        <link rel="stylesheet" href="css/index.css">
+       <script>
+        function myFunction1() {
+          document.getElementById("myDropdown1").classList.toggle("show1");
+          var dropdowns2 = document.getElementsByClassName("dropdown-content2");
+            var i;
+            for (i = 0; i < dropdowns2.length; i++) {
+              var openDropdown2 = dropdowns2[i];
+              if (openDropdown2.classList.contains('show2')) {
+                openDropdown2.classList.remove('show2');
+              }
+            }
+            var dropdowns3 = document.getElementsByClassName("dropdown-content3");
+            var i;
+            for (i = 0; i < dropdowns3.length; i++) {
+              var openDropdown3 = dropdowns3[i];
+              if (openDropdown3.classList.contains('show3')) {
+                openDropdown3.classList.remove('show3');
+              }
+            }
+        }
+        function myFunction2() {
+          document.getElementById("myDropdown2").classList.toggle("show2");
+          var dropdowns1 = document.getElementsByClassName("dropdown-content1");
+            var i;
+            for (i = 0; i < dropdowns1.length; i++) {
+              var openDropdown1 = dropdowns1[i];
+              if (openDropdown1.classList.contains('show1')) {
+                openDropdown1.classList.remove('show1');
+              }
+            }
+            var dropdowns3 = document.getElementsByClassName("dropdown-content3");
+            var i;
+            for (i = 0; i < dropdowns3.length; i++) {
+              var openDropdown3 = dropdowns3[i];
+              if (openDropdown3.classList.contains('show3')) {
+                openDropdown3.classList.remove('show3');
+              }
+            }
+        }
+        function myFunction3() {
+          document.getElementById("myDropdown3").classList.toggle("show3");
+          var dropdowns2 = document.getElementsByClassName("dropdown-content2");
+            var i;
+            for (i = 0; i < dropdowns2.length; i++) {
+              var openDropdown2 = dropdowns2[i];
+              if (openDropdown2.classList.contains('show2')) {
+                openDropdown2.classList.remove('show2');
+              }
+            }
+            var dropdowns1 = document.getElementsByClassName("dropdown-content1");
+            var i;
+            for (i = 0; i < dropdowns1.length; i++) {
+              var openDropdown1 = dropdowns1[i];
+              if (openDropdown1.classList.contains('show1')) {
+                openDropdown1.classList.remove('show1');
+              }
+            }
+        }
+        window.onclick = function(event) {
+          if (!event.target.matches('.dropbtn1')&&!event.target.matches('.dropbtn2')&&!event.target.matches('.dropbtn3')) {
+            var dropdowns1 = document.getElementsByClassName("dropdown-content1");
+            var i;
+            for (i = 0; i < dropdowns1.length; i++) {
+              var openDropdown1 = dropdowns1[i];
+              if (openDropdown1.classList.contains('show1')) {
+                openDropdown1.classList.remove('show1');
+              }
+            }
+            var dropdowns2 = document.getElementsByClassName("dropdown-content2");
+            var i;
+            for (i = 0; i < dropdowns2.length; i++) {
+              var openDropdown2 = dropdowns2[i];
+              if (openDropdown2.classList.contains('show2')) {
+                openDropdown2.classList.remove('show2');
+              }
+            }
+            var dropdowns3 = document.getElementsByClassName("dropdown-content3");
+            var i;
+            for (i = 0; i < dropdowns3.length; i++) {
+              var openDropdown3 = dropdowns3[i];
+              if (openDropdown3.classList.contains('show3')) {
+                openDropdown3.classList.remove('show3');
+              }
+            }
+          }
+        }
+
+        </script>
     </head>
     <body>
         <header class="top">
             <div class="page">
-                <button id="btncontract">Contract</button>
-                <button id="btnfreelance">Freelance</button>
-                <button id="btnpermanent">Permanent</button><br />
-                <button id="btnekkaphong">Ekkaphong Panya</button>
-                <button id="btnekkaphong2">Ekkaphong Panya 2</button>
-                <button id="btnkomsan">Komsan Madbamrung</button>
-                <button id="btnnaphat">Naphat Narukasolkkul</button>
-                <button id="btnphanthira">Phanthira Saengboon</button>
-                <button id="btnrasa">Rasa Amatawat</button>
-                <button id="btnsarinda">Sarinda Jiakwattanachayakorn</button>
-                <button id="btnsasithorn">Sasithorn Tonthao</button>
-                <button id="btnthitirat">Thitirat Aukkarakosaithanakul</button><br />
-                <button id="btndigital">Digital</button>
-                <button id="btnteleinbound">TeleInbound</button>
-                <button id="btnteleoutbound">TeleOutbound</button>
+                <div class="dropdown1">
+                    <button onclick="myFunction1()" class="dropbtn1" id ="drop1">Team ▾</button>
+                    <div id="myDropdown1" class="dropdown-content1">
+                        <button class="btnteam" id="btndigital">Digital</button>
+                        <button class="btnteam" id="btnteleinbound">TeleInbound</button>
+                        <button class="btnteam" id="btnteleoutbound">TeleOutbound</button>  
+                    </div>
+                </div>
+                <div class="dropdown2">
+                    <button onclick="myFunction2()" class="dropbtn2" id ="drop2">Agent Level ▾</button>
+                    <div id="myDropdown2" class="dropdown-content2">
+                        <button class="btnlv" id="btncontract">Contract</a>
+                        <button class="btnlv" id="btnfreelance">Freelance</a>
+                        <button class="btnlv" id="btnpermanent">Permanent</a>
+                    </div>
+                </div>
+                <div class="dropdown3">
+                    <button onclick="myFunction3()" class="dropbtn3" id ="drop3">Manager ▾</button>
+                    <div id="myDropdown3" class="dropdown-content3">
+                        <button class="btnmng" id="btnekkaphong">Ekkaphong Panya</a>
+                        <button class="btnmng" id="btnekkaphong2">Ekkaphong Panya 2</a>
+                        <button class="btnmng" id="btnkomsan">Komsan Madbamrung</a>
+                        <button class="btnmng" id="btnnaphat">Naphat Narukasolkkul</a>
+                        <button class="btnmng" id="btnphanthira">Phanthira Saengboon</a>
+                        <button class="btnmng" id="btnrasa">Rasa Amatawat</a>
+                        <button class="btnmng" id="btnsarinda">Sarinda Jiakwattanachayakorn</a>
+                        <button class="btnmng" id="btnsasithorn">Sasithorn Tonthao</a>
+                        <button class="btnmng" id="btnthitirat">Thitirat Aukkarakosaithanakul</a>
+                    </div>
+                </div>                             
+
             </div>
         </header>
         <div class="main">

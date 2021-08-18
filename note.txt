@@ -1,0 +1,4 @@
+manager info
+team agent type
+
+filter mainskill
