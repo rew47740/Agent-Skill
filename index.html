@@ -2,7 +2,7 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <title>Index</title>
+        <title>Agent Info</title>
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@600&display=swap" rel="stylesheet">
@@ -26,6 +26,14 @@
                 openDropdown3.classList.remove('show3');
               }
             }
+            var dropdowns4 = document.getElementsByClassName("dropdown-content4");
+            var i;
+            for (i = 0; i < dropdowns4.length; i++) {
+              var openDropdown4 = dropdowns4[i];
+              if (openDropdown4.classList.contains('show4')) {
+                openDropdown4.classList.remove('show4');
+              }
+            }
         }
         function myFunction2() {
           document.getElementById("myDropdown2").classList.toggle("show2");
@@ -45,10 +53,45 @@
                 openDropdown3.classList.remove('show3');
               }
             }
+            var dropdowns4 = document.getElementsByClassName("dropdown-content4");
+            var i;
+            for (i = 0; i < dropdowns4.length; i++) {
+              var openDropdown4 = dropdowns4[i];
+              if (openDropdown4.classList.contains('show4')) {
+                openDropdown4.classList.remove('show4');
+              }
+            }
         }
         function myFunction3() {
           document.getElementById("myDropdown3").classList.toggle("show3");
-          var dropdowns2 = document.getElementsByClassName("dropdown-content2");
+            var dropdowns1 = document.getElementsByClassName("dropdown-content1");
+            var i;
+            for (i = 0; i < dropdowns1.length; i++) {
+              var openDropdown1 = dropdowns1[i];
+              if (openDropdown1.classList.contains('show1')) {
+                openDropdown1.classList.remove('show1');
+              }
+            }
+            var dropdowns2 = document.getElementsByClassName("dropdown-content2");
+            var i;
+            for (i = 0; i < dropdowns2.length; i++) {
+              var openDropdown2 = dropdowns2[i];
+              if (openDropdown2.classList.contains('show2')) {
+                openDropdown2.classList.remove('show2');
+              }
+            }
+            var dropdowns4 = document.getElementsByClassName("dropdown-content4");
+            var i;
+            for (i = 0; i < dropdowns4.length; i++) {
+              var openDropdown4 = dropdowns4[i];
+              if (openDropdown4.classList.contains('show4')) {
+                openDropdown4.classList.remove('show4');
+              }
+            }
+        }
+        function myFunction4() {
+          document.getElementById("myDropdown4").classList.toggle("show4");
+            var dropdowns2 = document.getElementsByClassName("dropdown-content2");
             var i;
             for (i = 0; i < dropdowns2.length; i++) {
               var openDropdown2 = dropdowns2[i];
@@ -64,9 +107,17 @@
                 openDropdown1.classList.remove('show1');
               }
             }
+            var dropdowns3 = document.getElementsByClassName("dropdown-content3");
+            var i;
+            for (i = 0; i < dropdowns3.length; i++) {
+              var openDropdown3 = dropdowns3[i];
+              if (openDropdown3.classList.contains('show3')) {
+                openDropdown3.classList.remove('show3');
+              }
+            }
         }
         window.onclick = function(event) {
-          if (!event.target.matches('.dropbtn1')&&!event.target.matches('.dropbtn2')&&!event.target.matches('.dropbtn3')) {
+          if (!event.target.matches('.dropbtn1')&&!event.target.matches('.dropbtn2')&&!event.target.matches('.dropbtn3')&&!event.target.matches('.dropbtn4')) {
             var dropdowns1 = document.getElementsByClassName("dropdown-content1");
             var i;
             for (i = 0; i < dropdowns1.length; i++) {
@@ -89,6 +140,14 @@
               var openDropdown3 = dropdowns3[i];
               if (openDropdown3.classList.contains('show3')) {
                 openDropdown3.classList.remove('show3');
+              }
+            }
+            var dropdowns4 = document.getElementsByClassName("dropdown-content4");
+            var i;
+            for (i = 0; i < dropdowns4.length; i++) {
+              var openDropdown4 = dropdowns4[i];
+              if (openDropdown4.classList.contains('show4')) {
+                openDropdown4.classList.remove('show4');
               }
             }
           }
@@ -128,8 +187,22 @@
                         <button class="btnmng" id="btnsasithorn">Sasithorn Tonthao</a>
                         <button class="btnmng" id="btnthitirat">Thitirat Aukkarakosaithanakul</a>
                     </div>
-                </div>                             
-
+                </div> 
+                <div class="dropdown4">
+                  <button onclick="myFunction4()" class="dropbtn4" id ="drop4">Main Skill ▾</button>
+                  <div id="myDropdown4" class="dropdown-content4">
+                      <button class="btnskill" id="btnentsim">EntSIM</a>
+                      <button class="btnskill" id="btnp2p">P2P</a>
+                      <button class="btnskill" id="btntmh">TMH</a>
+                      <button class="btnskill" id="btntol">TOL (CVG)</a>
+                      <button class="btnskill" id="btntid">True ID</a>
+                      <button class="btnskill" id="btntvs">TVS</a>
+                      <button class="btnskill" id="btnutmh">Up TMH</a>
+                      <button class="btnskill" id="btnutol">Up TOL</a>
+                      <button class="btnskill" id="btnutvs">Up TVS</a>
+                  </div>
+              </div>                             
+                  <button class="btnsummary" onclick=" window.open('summary.html','_blank')"> Summary</button>
             </div>
         </header>
         <div class="main">

@@ -4,7 +4,8 @@ body{
     background-color: #FFFCF1;
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1600 900'%3E%3Cpolygon fill='%23d5a364' points='957 450 539 900 1396 900'/%3E%3Cpolygon fill='%2378501e' points='957 450 872.9 900 1396 900'/%3E%3Cpolygon fill='%23ce9a57' points='-60 900 398 662 816 900'/%3E%3Cpolygon fill='%23724b20' points='337 900 398 662 816 900'/%3E%3Cpolygon fill='%23c7924b' points='1203 546 1552 900 876 900'/%3E%3Cpolygon fill='%236b4622' points='1203 546 1552 900 1162 900'/%3E%3Cpolygon fill='%23bf893e' points='641 695 886 900 367 900'/%3E%3Cpolygon fill='%23654123' points='587 900 641 695 886 900'/%3E%3Cpolygon fill='%23b88131' points='1710 900 1401 632 1096 900'/%3E%3Cpolygon fill='%235d3c24' points='1710 900 1401 632 1365 900'/%3E%3Cpolygon fill='%23b07923' points='1210 900 971 687 725 900'/%3E%3Cpolygon fill='%23563825' points='943 900 1210 900 971 687'/%3E%3C/svg%3E");
     background-attachment: fixed;
-    background-size: cover;}
+    background-size: cover;
+}
 #show{
     margin-top: 100px;
     margin-left: 5%;
@@ -98,7 +99,7 @@ body{
     font-size: 80px;
     color: rgb(0, 0, 0);
 }
-.dropbtn1,.dropbtn2,.dropbtn3 {
+.dropbtn1,.dropbtn2,.dropbtn3,.dropbtn4,.btnsummary {
     font-family: 'Comfortaa', cursive;
     height: 10px;
     background-color: transparent;
@@ -113,17 +114,17 @@ body{
     transition: 0.6s ease all;
   }
 
-.dropbtn1:hover,.dropbtn2:hover,.dropbtn3:hover{
+.dropbtn1:hover,.dropbtn2:hover,.dropbtn3:hover,.dropbtn4:hover,.btnsummary:hover{
     height: 10px;
     color:rgb(100, 97, 95);
     transform: scale(1.1);
 }
-.dropdown1,.dropdown2 ,.dropdown3 {
+.dropdown1,.dropdown2 ,.dropdown3,.dropdown4 {
     position: relative;
     display: inline-block;
   }
   
-.dropdown-content1,.dropdown-content2 ,.dropdown-content3 {
+.dropdown-content1,.dropdown-content2 ,.dropdown-content3,.dropdown-content4 {
     margin-left: 20px;
     margin-top: 10px;
     display: none;
@@ -136,10 +137,10 @@ body{
     border-radius: 25px;
   }
 
-.dropdown-content1 a:hover,.dropdown-content2 a:hover,.dropdown-content3 a:hover {
+.dropdown-content1 a:hover,.dropdown-content2 a:hover,.dropdown-content3 a:hover,.dropdown-content4 a:hover {
       background-color: #ddd;
     }
-.btnlv,.btnmng,.btnteam{
+.btnlv,.btnmng,.btnteam,.btnskill{
     font-family: 'Comfortaa', cursive;
     font-weight: bolder;
     background: transparent;
@@ -151,14 +152,12 @@ body{
     text-align: left;
     border-radius: 25px;
 }
-.btnlv:hover,.btnmng:hover,.btnteam:hover{
+.btnlv:hover,.btnmng:hover,.btnteam:hover,.btnskill:hover{
 background: #ddd;
 cursor: pointer;
 border-radius: 25px;
 }
-.show1 {display:block;}
-.show2 {display:block;}
-.show3 {display:block;}
+.show1,.show2,.show3,.show4 {display:block;}
 .Row {
     margin-top: 20px;
     display: table;

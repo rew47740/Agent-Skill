@@ -7,40 +7,46 @@ fetch("json/data.json")
     dataused=data.filter(function(obj) {return obj.TEAM=="Digital"}); 
     showdata();
     function filterAgentlevel (filter){
-        agentlevelcheck=1;
-        if (managercheck==1){
-            dataused = dataused.filter(function(obj) {return obj.P_AGENT_LEVEL==filter});
-        }
-        if (teamcheck==1){
-            dataused = dataused.filter(function(obj) {return obj.P_AGENT_LEVEL==filter});
-        }
-        else{
-            dataused = data.filter(function(obj) {return obj.P_AGENT_LEVEL==filter}); 
-        }
+        dataused = data.filter(function(obj) {return obj.P_AGENT_LEVEL==filter});
+        // agentlevelcheck=1;
+        // if (managercheck==1){
+        //     dataused = dataused.filter(function(obj) {return obj.P_AGENT_LEVEL==filter});
+        // }
+        // if (teamcheck==1){
+        //     dataused = dataused.filter(function(obj) {return obj.P_AGENT_LEVEL==filter});
+        // }
+        // else{
+        //     dataused = data.filter(function(obj) {return obj.P_AGENT_LEVEL==filter}); 
+        // }
     }
     function filterManager (filter){
-        managercheck=1;        
-        if (agentlevelcheck==1){
-            dataused = dataused.filter(function(obj) {return obj.MANAGER_FULLNAME==filter});
-        }
-        if (teamcheck==1){
-            dataused = dataused.filter(function(obj) {return obj.MANAGER_FULLNAME==filter});
-        }
-        else{
-            dataused = data.filter(function(obj) {return obj.MANAGER_FULLNAME==filter}); 
-        }
+        dataused = data.filter(function(obj) {return obj.MANAGER_FULLNAME==filter}); 
+        // managercheck=1;        
+        // if (agentlevelcheck==1){
+        //     dataused = dataused.filter(function(obj) {return obj.MANAGER_FULLNAME==filter});
+        // }
+        // if (teamcheck==1){
+        //     dataused = dataused.filter(function(obj) {return obj.MANAGER_FULLNAME==filter});
+        // }
+        // else{
+        //     dataused = data.filter(function(obj) {return obj.MANAGER_FULLNAME==filter}); 
+        // }
     }
     function filterTeam (filter){
-        teamcheck=1;   
-        if (agentlevelcheck==1){
-            dataused = dataused.filter(function(obj) {return obj.TEAM==filter});
-        }
-        if (managercheck==1){
-            dataused = dataused.filter(function(obj) {return obj.TEAM==filter});
-        }
-        else{
-            dataused = data.filter(function(obj) {return obj.TEAM==filter}); 
-        }
+        dataused = data.filter(function(obj) {return obj.TEAM==filter}); 
+        // teamcheck=1;   
+        // if (agentlevelcheck==1){
+        //     dataused = dataused.filter(function(obj) {return obj.TEAM==filter});
+        // }
+        // if (managercheck==1){
+        //     dataused = dataused.filter(function(obj) {return obj.TEAM==filter});
+        // }
+        // else{
+        //     dataused = data.filter(function(obj) {return obj.TEAM==filter}); 
+        // }
+    }
+    function filterSkill (filter){
+        dataused = data.filter(function(obj) {return obj.Main_Skill==filter}); 
     }
     function showdata(){ 
         show.innerHTML = " ";           
@@ -115,4 +121,40 @@ fetch("json/data.json")
         filterTeam('TeleOutbound');
         showdata();
     }
+    document.getElementById('btnentsim').onclick = function(){
+        filterSkill('EntSIM');
+        showdata();
+    }
+    document.getElementById('btnp2p').onclick = function(){
+        filterSkill('P2P');
+        showdata();
+    }
+    document.getElementById('btntmh').onclick = function(){
+        filterSkill('TMH');
+        showdata();
+    }
+    document.getElementById('btntol').onclick = function(){
+        filterSkill('TOL (CVG)');
+        showdata();
+    }
+    document.getElementById('btntid').onclick = function(){
+        filterSkill('True ID');
+        showdata();
+    }
+    document.getElementById('btntvs').onclick = function(){
+        filterSkill('TVS');
+        showdata();
+    }
+    document.getElementById('btnutmh').onclick = function(){
+        filterSkill('Up TMH');
+        showdata();
+    }
+    document.getElementById('btnutol').onclick = function(){
+        filterSkill('Up TOL');
+        showdata();
+    }
+    document.getElementById('btnutvs').onclick = function(){
+        filterSkill('Up TVS');
+        showdata();
+    }    
 })
