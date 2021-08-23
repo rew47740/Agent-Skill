@@ -7,25 +7,6 @@ body{
     background-size: cover;
 }
 
-/* .permanent{
-    border-radius: 200px;
-    width: 75%;
-    overflow: hidden;
-    opacity: 0.9;
-    padding: 30px;
-    padding-left: 200px;
-    margin: 30px;
-    color: rgb(117, 94, 87);
-    font-size: 17px;
-    height: 270px;
-    transition: 0.6s ease all;
-    line-height: 1.8;
-    margin-bottom: 4%;
-    margin-top: 0%;
-    background-color:#fcfcfc;
-    box-shadow: 0px 10px 0px #c5c5c5, 0px 3px 15px rgba(0,0,0,.4), inset 0px 1px 0px rgba(255,255,255,.3), inset 0px 0px 3px rgba(255,255,255,.5);
-
-} */
 
 .Row:hover{
     transform: scale(1.05);
@@ -59,7 +40,7 @@ body{
     width:95%;
     overflow: hidden;
     opacity: 0.9;
-    padding: 30px 30px;
+    padding: 50px 30px;
     margin: 30px;
     margin-bottom: 5%;
     color: rgb(117, 94, 87);
@@ -69,7 +50,7 @@ body{
     background-color:#fcfcfc;
     box-shadow: 0px 10px 0px #c5c5c5, 0px 3px 15px rgba(0,0,0,.4), inset 0px 1px 0px rgba(255,255,255,.3), inset 0px 0px 3px rgba(255,255,255,.5);
     margin-left: 2.46%;
-    border-spacing: 90px 10px;
+    border-spacing: 90px 0px;
 }
 
 .head {
@@ -85,4 +66,10 @@ body{
     font-size: 40px;
     transition: 0.6s ease all;
     margin-bottom: 50px;
+  }
+  .team,.sum{
+      font-size: 23px;
+      padding-top: 2%;
+      padding-bottom: 0%;
+      padding-left: 7.5%;
   }

@@ -99,7 +99,7 @@ body{
     font-size: 80px;
     color: rgb(0, 0, 0);
 }
-.dropbtn1,.dropbtn2,.dropbtn3,.dropbtn4,.btnsummary {
+.dropbtn1,.dropbtn2,.dropbtn3,.dropbtn4,.btnsummary,.btnsort {
     font-family: 'Comfortaa', cursive;
     height: 10px;
     background-color: transparent;
@@ -113,8 +113,11 @@ body{
     font-size: 25px;
     transition: 0.6s ease all;
   }
+  .btnsort{
+      font-size: 15px;
+  }
 
-.dropbtn1:hover,.dropbtn2:hover,.dropbtn3:hover,.dropbtn4:hover,.btnsummary:hover{
+.dropbtn1:hover,.dropbtn2:hover,.dropbtn3:hover,.dropbtn4:hover,.btnsummary:hover,.btnsort:hover{
     height: 10px;
     color:rgb(100, 97, 95);
     transform: scale(1.1);
@@ -183,5 +186,12 @@ border-radius: 25px;
     table-layout: fixed; 
     border-spacing: 40px 2px; 
     margin-left: -4%;
-
+}
+#selected{
+    color: rgb(194, 189, 187);
+    font-size: 20px;
+    margin-left: 1.7%;
+    margin-top: 5%;
+    margin-bottom: 0px;
+    line-height: 0px;
 }
