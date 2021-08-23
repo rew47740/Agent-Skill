@@ -133,11 +133,11 @@ body{
     display: none;
     position: absolute;
     background-color: white;
-    opacity: 0.8;
     min-width: 150px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
     border-radius: 25px;
+    box-shadow: 0px 10px 0px #c5c5c5, 0px 3px 15px rgba(0,0,0,.4), inset 0px 1px 0px rgba(255,255,255,.3), inset 0px 0px 3px rgba(255,255,255,.5);
   }
 
 .dropdown-content1 a:hover,.dropdown-content2 a:hover,.dropdown-content3 a:hover,.dropdown-content4 a:hover {
@@ -160,7 +160,9 @@ background: #ddd;
 cursor: pointer;
 border-radius: 25px;
 }
-.show1,.show2,.show3,.show4 {display:block;}
+.show1,.show2,.show3,.show4 {
+    display:block;
+}
 .Row {
     margin-top: 20px;
     display: table;
