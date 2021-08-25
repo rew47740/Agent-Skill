@@ -225,3 +225,10 @@ border-radius: 25px;
     line-height: 0px;
     float: right;
 }
+#checkstatus{
+    font-size: 15px;    
+    display: inline-block;
+    color: rgb(163, 156, 153);
+}
+#checkbox{
+}

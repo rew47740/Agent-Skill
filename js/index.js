@@ -6,7 +6,9 @@ fetch("json/data.json")
     var teamcheck=0;
     var count=0;
     var sortp=0;
-    dataused=data.filter(function(obj) {return obj.TEAM=="Digital"}); 
+    
+    dataused=data.filter(function(obj) {return obj.TEAM=="TeleInbound"}); 
+    datacheck=dataused;
     showdata();
     function filterAgentlevel (filter){
         dataused = data.filter(function(obj) {return obj.P_AGENT_LEVEL==filter});
@@ -56,6 +58,7 @@ fetch("json/data.json")
     }
     function showdata(){ 
         count=0;
+        checkbox.checked=true;
         show.innerHTML = " ";           
         for (i = 0;i<dataused.length;i++){
             if (dataused[i].Status=="active"){
@@ -72,7 +75,6 @@ fetch("json/data.json")
         countlist.innerHTML=count+" results"
     }
     function sortrev(prop) { 
-        console.log("kuy")
         if(sortp==0){
         dataused = dataused.sort((a, b) => {
             let retval = 0;
@@ -161,6 +163,10 @@ fetch("json/data.json")
         filterManager('Thitirat Aukkarakosaithanakul');
         showdata();
     }
+    document.getElementById('btnlinjee').onclick = function(){
+        filterManager('Linjee Punyayom');
+        showdata();
+    }
     document.getElementById('btndigital').onclick = function(){
         filterTeam('Digital');
         showdata();
@@ -212,7 +218,30 @@ fetch("json/data.json")
     document.getElementById('btnsort').onclick = function(){
         sortrev();
         showdata();
-    }     
+    } 
+    document.getElementById('checkbox').onclick = function(){
+        console.log("kk")
+        if (checkbox.checked == true){
+            datacheck= dataused.filter(function(obj) {return obj.Status=="active"||obj.Status=="resign"});
+          } else {
+            datacheck= dataused.filter(function(obj) {return obj.Status=="active"});
+          }
+          count=0;
+          show.innerHTML = " ";           
+          for (i = 0;i<datacheck.length;i++){
+              if (datacheck[i].Status=="active"){
+                  show.innerHTML += '<div class="permanent" tabindex="0">'+"<span class = agentname>"+datacheck[i].SALE_FULLNAME_ENG+"</span>"+'<div class = status>&nbsp</div>'+"<br />"+"<span class = bold>Agent ID : </span>"+datacheck[i].Agent_ID+"<br />"+"<span class = bold>Agent Level : </span>"+
+                  datacheck[i].P_AGENT_LEVEL+"<br />"+"<span class = bold>SUP. Fullname : </span>"+datacheck[i].SUP_FULLNAME+"<br />"+"<span class = bold>Manager Fullname : </span>"+datacheck[i].MANAGER_FULLNAME+"<br />"+"<span class = bold>Team : </span>"+datacheck[i].TEAM+"<br />"+"<span class = bold>Status : </span>"+datacheck[i].Status+"<br />"+'<div class="RowLv">'+'<div class = Column>'+"<span class = bold>Main Skill</span>"+"<br />"+datacheck[i].Main_Skill+'</div>'+'<div class = Column>'+"<span class = bold>2nd Skill</span>"+"<br />"+datacheck[i].two_Skill+'</div>'+'<div class = Column>'+"<span class = bold>3rd Skill</span>"+"<br />"+datacheck[i].three_Skill+'</div>'+'<div class = Column>'+"<span class = bold>4th Skill</span>"+"<br />"+datacheck[i].four_Skill+'</div>'+'</div>'+'<p class="seemore">▾</p>'+'<div class = RowLv>'+'<div class = Column>'+"<span class = bold>5th Skill</span>"+"<br />"+datacheck[i].five_Skill+'</div>'+'<div class = Column>'+"<span class = bold>6th Skill</span>"+"<br />"+datacheck[i].six_Skill+'</div>'+'<div class = Column>'+"<span class = bold>7th Skill</span>"+"<br />"+datacheck[i].seven_Skill+'</div>'+'<div class = Column>'+"<span class = bold>8th Skill</span>"+"<br />"+datacheck[i].eight_Skill+'</div>'+'</div>'+'<div class="Row">'+'<div class="Left">'+"<span class = bold>SUB XTVS : </span>"+datacheck[i].SUB_XTVS+"<br />"+"<span class = bold>SUB XTOL : </span>"+datacheck[i].SUB_XTOL+"<br />"+"<span class = bold>SUB XTMH : </span>"+datacheck[i].SUB_XTMH+"<br />"+"<span class = bold>SUB UTVS : </span>"+datacheck[i].SUB_UTVS+"<br />"+"<span class = bold>SUB UTOL : </span>"+datacheck[i].SUB_UTOL+"<br />"+"<span class = bold>SUB UTMH : </span>"+datacheck[i].SUB_UTMH+"<br />"+"<span class = bold>TOTAL SUB X : </span>"+datacheck[i].TOTAL_SUB_X+"<br />"+"<span class = bold>TOTAL SUB U : </span>"+datacheck[i].TOTAL_SUB_U+"<br />"+"<span class = bold>TOTAL SUB X+U : </span>"+datacheck[i].TOTAL_SUB_X_U+"<br />"+'</div>'+'<div class="Right">'+"<span class = bold>Revenue XTVS : </span>"+datacheck[i].Revenue_XTVS+"<br />"+"<span class = bold>Revenue XTOL : </span>"+datacheck[i].Revenue_XTOL+"<br />"+"<span class = bold>Revenue XTMH : </span>"+datacheck[i].Revenue_XTMH+"<br />"+"<span class = bold>Revenue UTVS : </span>"+datacheck[i].Revenue_UTVS+"<br />"+"<span class = bold>Revenue UTOL : </span>"+datacheck[i].Revenue_UTOL+"<br />"+"<span class = bold>Revenue UTMH : </span>"+datacheck[i].Revenue_UTMH+"<br />"+"<span class = bold>TOTAL Revenue X : </span>"+datacheck[i].TOTAL_Revenue_X+"<br />"+"<span class = bold>TOTAL Revenue U : </span>"+datacheck[i].TOTAL_Revenue_U+"<br />"+"<span class = bold>TOTAL Revenue X+U : </span>"+datacheck[i].TOTAL_Revenue_X_U+"<br />"+'</div>'+'</div>'+'</div>'; 
+                  count++
+              }
+              else{
+                  show.innerHTML += '<div class="permanent" tabindex="0">'+"<span class = agentname>"+datacheck[i].SALE_FULLNAME_ENG+"</span>"+'<div style="background: rgb(182, 0, 0);" class = status >&nbsp</div>'+"<br />"+"<span class = bold>Agent ID : </span>"+datacheck[i].Agent_ID+"<br />"+"<span class = bold>Agent Level : </span>"+
+                  datacheck[i].P_AGENT_LEVEL+"<br />"+"<span class = bold>SUP. Fullname : </span>"+datacheck[i].SUP_FULLNAME+"<br />"+"<span class = bold>Manager Fullname : </span>"+datacheck[i].MANAGER_FULLNAME+"<br />"+"<span class = bold>Team : </span>"+datacheck[i].TEAM+"<br />"+"<span class = bold>Status : </span>"+datacheck[i].Status+"<br />"+'<div class="RowLv">'+'<div class = Column>'+"<span class = bold>Main Skill</span>"+"<br />"+datacheck[i].Main_Skill+'</div>'+'<div class = Column>'+"<span class = bold>2nd Skill</span>"+"<br />"+datacheck[i].two_Skill+'</div>'+'<div class = Column>'+"<span class = bold>3rd Skill</span>"+"<br />"+datacheck[i].three_Skill+'</div>'+'<div class = Column>'+"<span class = bold>4th Skill</span>"+"<br />"+datacheck[i].four_Skill+'</div>'+'</div>'+'<p class="seemore">▾</p>'+'<div class = RowLv>'+'<div class = Column>'+"<span class = bold>5th Skill</span>"+"<br />"+datacheck[i].five_Skill+'</div>'+'<div class = Column>'+"<span class = bold>6th Skill</span>"+"<br />"+datacheck[i].six_Skill+'</div>'+'<div class = Column>'+"<span class = bold>7th Skill</span>"+"<br />"+datacheck[i].seven_Skill+'</div>'+'<div class = Column>'+"<span class = bold>8th Skill</span>"+"<br />"+datacheck[i].eight_Skill+'</div>'+'</div>'+'<div class="Row">'+'<div class="Left">'+"<span class = bold>SUB XTVS : </span>"+datacheck[i].SUB_XTVS+"<br />"+"<span class = bold>SUB XTOL : </span>"+datacheck[i].SUB_XTOL+"<br />"+"<span class = bold>SUB XTMH : </span>"+datacheck[i].SUB_XTMH+"<br />"+"<span class = bold>SUB UTVS : </span>"+datacheck[i].SUB_UTVS+"<br />"+"<span class = bold>SUB UTOL : </span>"+datacheck[i].SUB_UTOL+"<br />"+"<span class = bold>SUB UTMH : </span>"+datacheck[i].SUB_UTMH+"<br />"+"<span class = bold>TOTAL SUB X : </span>"+datacheck[i].TOTAL_SUB_X+"<br />"+"<span class = bold>TOTAL SUB U : </span>"+datacheck[i].TOTAL_SUB_U+"<br />"+"<span class = bold>TOTAL SUB X+U : </span>"+datacheck[i].TOTAL_SUB_X_U+"<br />"+'</div>'+'<div class="Right">'+"<span class = bold>Revenue XTVS : </span>"+datacheck[i].Revenue_XTVS+"<br />"+"<span class = bold>Revenue XTOL : </span>"+datacheck[i].Revenue_XTOL+"<br />"+"<span class = bold>Revenue XTMH : </span>"+datacheck[i].Revenue_XTMH+"<br />"+"<span class = bold>Revenue UTVS : </span>"+datacheck[i].Revenue_UTVS+"<br />"+"<span class = bold>Revenue UTOL : </span>"+datacheck[i].Revenue_UTOL+"<br />"+"<span class = bold>Revenue UTMH : </span>"+datacheck[i].Revenue_UTMH+"<br />"+"<span class = bold>TOTAL Revenue X : </span>"+datacheck[i].TOTAL_Revenue_X+"<br />"+"<span class = bold>TOTAL Revenue U : </span>"+datacheck[i].TOTAL_Revenue_U+"<br />"+"<span class = bold>TOTAL Revenue X+U : </span>"+datacheck[i].TOTAL_Revenue_X_U+"<br />"+'</div>'+'</div>'+'</div>'; 
+                  count++
+              }
+          }
+          countlist.innerHTML=count+" results"
+    }       
     totop.addEventListener('click',topFunction);
     window.onscroll = function() {scrollFunction()};
 })
