@@ -92,3 +92,15 @@ body{
   #totop:hover {
     background-color: #555;
   }
+  .Left,.Right{
+    display: table-cell;
+}
+.Rowsub {
+    margin-left: -6.5%;
+    border-spacing: 25px 0px;
+    display: table;
+    table-layout: fixed; 
+    color: rgb(117, 94, 87);
+    font-size: 15px;
+
+}

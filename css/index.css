@@ -40,7 +40,7 @@ body{
 }
 .permanent:focus{
     opacity: 1;
-    height: 840px;
+    height: 740px;
     pointer-events: none;
     transition: 0.3s ease all;
 }
