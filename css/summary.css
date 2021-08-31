@@ -67,11 +67,17 @@ body{
     transition: 0.6s ease all;
     margin-bottom: 50px;
   }
-  .team,.sum{
+  .team{
       font-size: 23px;
       padding-top: 2%;
       padding-bottom: 0%;
       padding-left: 7.5%;
+  }
+  .sum{
+    font-size: 23px;
+    padding-top: 2%;
+    padding-bottom: 0%;
+    text-align: center;
   }
   #totop {
     display: none;
@@ -96,6 +102,8 @@ body{
     display: table-cell;
 }
 .Rowsub {
+    margin-top: 10px;
+    margin-bottom: 15px;
     margin-left: -6.5%;
     border-spacing: 25px 0px;
     display: table;
