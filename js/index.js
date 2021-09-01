@@ -243,4 +243,5 @@ fetch("json/data.json")
     }       
     totop.addEventListener('click',topFunction);
     window.onscroll = function() {scrollFunction()};
+    
 })

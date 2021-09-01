@@ -28,7 +28,7 @@ body{
 }
 .bold{
     color: rgb(85, 70, 65);
-    font-size: 18px;
+    font-size: 16px;
 }
 .Column{
     display: table-cell;
@@ -36,7 +36,7 @@ body{
 .Row {
     display: table;
     table-layout: fixed; 
-    border-radius: 200px;
+    border-radius: 150px;
     width:95%;
     overflow: hidden;
     opacity: 0.9;
@@ -50,7 +50,7 @@ body{
     background-color:#fcfcfc;
     box-shadow: 0px 10px 0px #c5c5c5, 0px 3px 15px rgba(0,0,0,.4), inset 0px 1px 0px rgba(255,255,255,.3), inset 0px 0px 3px rgba(255,255,255,.5);
     margin-left: 2.46%;
-    border-spacing: 90px 0px;
+    border-spacing: 50px 0px;
 }
 
 .head {
@@ -71,13 +71,14 @@ body{
       font-size: 23px;
       padding-top: 2%;
       padding-bottom: 0%;
-      padding-left: 7.5%;
+      padding-left: 4%;
   }
   .sum{
     font-size: 23px;
     padding-top: 2%;
     padding-bottom: 0%;
-    text-align: center;
+    padding-left: 4%;
+    /* text-align: center; */
   }
   #totop {
     display: none;
@@ -104,8 +105,8 @@ body{
 .Rowsub {
     margin-top: 10px;
     margin-bottom: 15px;
-    margin-left: -6.5%;
-    border-spacing: 25px 0px;
+    margin-left: -4.5%;
+    border-spacing: 15px 0px;
     display: table;
     table-layout: fixed; 
     color: rgb(117, 94, 87);
