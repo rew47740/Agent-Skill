@@ -219,6 +219,10 @@ fetch("json/data.json")
         sortrev();
         showdata();
     } 
+    document.getElementById('enter').onclick = function(){
+        search();
+        showdata();
+    } 
     document.getElementById('checkbox').onclick = function(){
         if (checkbox.checked == true){
             datacheck= dataused.filter(function(obj) {return obj.Status=="active"||obj.Status=="resign"});
@@ -243,5 +247,30 @@ fetch("json/data.json")
     }       
     totop.addEventListener('click',topFunction);
     window.onscroll = function() {scrollFunction()};
-    
+    let agentid = data.map(value => { return value.SALE_FULLNAME_ENG });
+    agentid = agentid.filter(function(item, index) {
+        if (agentid.indexOf(item) == index)
+          return item;
+      });
+      agentid.forEach(function(item){
+        var option = document.createElement('option');
+        option.value = item;
+        list.appendChild(option)
+       });
+function search(){
+    var input = document.getElementById('input').value;
+    selected.innerHTML = "Search > "+input
+          if(input==''){
+                dataused=dataused;
+                return dataused;  }
+          else{
+                dataused = data.filter(function(obj) {
+                return obj.SALE_FULLNAME_ENG.toLowerCase()== input.toLowerCase();
+          });     
+          }
+          if(dataused.length==0){
+                show.innerHTML='<div class="permanent" tabindex="0">'+"No Result"+"</div>";
+          }
+          return dataused;
+      }
 })
